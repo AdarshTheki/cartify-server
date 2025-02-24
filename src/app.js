@@ -17,7 +17,7 @@ import addressRoute from "./routes/address.router.js";
 const app = express();
 
 app.use(
-  cors({ origin: process.env.CORS.split(",") || "*", credentials: true })
+  cors({ origin: process.env?.CORS?.split(",") || "*", credentials: true })
 );
 
 app.use(express.json());
